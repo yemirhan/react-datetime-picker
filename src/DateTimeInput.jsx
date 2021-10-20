@@ -591,7 +591,7 @@ export default class DateTimeInput extends PureComponent {
         key="day"
         {...this.commonInputProps}
         ariaLabel={dayAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.dayInput}
         month={month}
         placeholder={dayPlaceholder}
@@ -622,7 +622,7 @@ export default class DateTimeInput extends PureComponent {
           key="month"
           {...this.commonInputProps}
           ariaLabel={monthAriaLabel}
-          autoFocus={index === 0 && autoFocus}
+          autoFocus={false}
           inputRef={this.monthInput}
           locale={locale}
           placeholder={monthPlaceholder}
@@ -640,7 +640,7 @@ export default class DateTimeInput extends PureComponent {
         key="month"
         {...this.commonInputProps}
         ariaLabel={monthAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.monthInput}
         placeholder={monthPlaceholder}
         showLeadingZeros={showLeadingZerosFromFormat || showLeadingZeros}
@@ -659,7 +659,7 @@ export default class DateTimeInput extends PureComponent {
         key="year"
         {...this.commonInputProps}
         ariaLabel={yearAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.yearInput}
         placeholder={yearPlaceholder}
         value={year}
@@ -692,7 +692,7 @@ export default class DateTimeInput extends PureComponent {
         {...this.commonInputProps}
         amPm={amPm}
         ariaLabel={hourAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.hour12Input}
         placeholder={hourPlaceholder}
         showLeadingZeros={showLeadingZeros}
@@ -716,7 +716,7 @@ export default class DateTimeInput extends PureComponent {
         key="hour24"
         {...this.commonInputProps}
         ariaLabel={hourAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.hour24Input}
         placeholder={hourPlaceholder}
         showLeadingZeros={showLeadingZeros}
@@ -740,7 +740,7 @@ export default class DateTimeInput extends PureComponent {
         key="minute"
         {...this.commonInputProps}
         ariaLabel={minuteAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         hour={hour}
         inputRef={this.minuteInput}
         placeholder={minutePlaceholder}
@@ -765,7 +765,7 @@ export default class DateTimeInput extends PureComponent {
         key="second"
         {...this.commonInputProps}
         ariaLabel={secondAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         hour={hour}
         inputRef={this.secondInput}
         minute={minute}
@@ -785,7 +785,7 @@ export default class DateTimeInput extends PureComponent {
         key="ampm"
         {...this.commonInputProps}
         ariaLabel={amPmAriaLabel}
-        autoFocus={index === 0 && autoFocus}
+        autoFocus={false}
         inputRef={this.amPmInput}
         locale={locale}
         onChange={this.onChangeAmPm}
